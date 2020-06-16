@@ -6,7 +6,7 @@ This is an POC application like (https://tracktherecovery.org/)
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
 
 To install dependencies package
 
