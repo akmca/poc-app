@@ -1,8 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is an POC application like (https://tracktherecovery.org/)
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm start`
+
+To install dependencies package
 
 ### `npm start`
 
