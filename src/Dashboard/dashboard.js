@@ -15,7 +15,7 @@ class Dashboard extends Component {
                 },
                 yaxis: {
                     labels: {
-                        formatter: (value) => `+${value}%`
+                        formatter: (value) => value > 0 ? `+${value}%` : `${value}%`
                     }
                 }
             },
@@ -38,7 +38,7 @@ class Dashboard extends Component {
                     },
                     yaxis: {
                         labels: {
-                            formatter: (value) => `+${value}%`
+                            formatter: (value) => value > 0 ? `+${value}%` : `${value}%`
                         }
                     }
                 }
@@ -52,11 +52,12 @@ class Dashboard extends Component {
                 <div className="my-card">
                     <div className="row">
                         <div className="col-lg-6">
+                            <h3>All US States</h3>
                             <MapChart click={this.onstateChangeHandler} />
                         </div>
                         <div className="col-lg-6">
                             <div className="mixed-chart">
-                                <h2>Current state : {this.state.currentState}</h2>
+                                <h3>Current State : {this.state.currentState}</h3>
                                 <Chart
                                     options={this.state.options}
                                     series={this.state.series}
